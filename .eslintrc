@@ -8,8 +8,20 @@
 	"extends": ["airbnb", "prettier"],
 	"plugins": ["prettier"],
 	"rules": {
-		"prettier/prettier": ["error"],
 		"import/no-extraneous-dependencies": 0,
-		"react/jsx-filename-extension": 0
+		"max-len": "off",
+		"indent": ["error", 4, { "ignoredNodes": ["JSXElement *"] }],
+		"react/jsx-indent": [
+			"error",
+			4,
+			{ "checkAttributes": true, "indentLogicalExpressions": true }
+		],
+		"react/jsx-indent-props": ["error", 4],
+		"react/jsx-filename-extension": [
+			1,
+			{
+				"extensions": [".js", ".jsx"]
+			}
+		]
 	}
 }
