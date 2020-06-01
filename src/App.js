@@ -1,10 +1,24 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { Switch, BrowserRouter as Router, Route } from 'react-router-dom';
 
-const App = ({ title }) => <div>{title}</div>;
+// Pages
+import { ProductList, NotFound } from './pages';
 
-App.propTypes = {
-    title: PropTypes.string.isRequired,
-};
+function App() {
+    return (
+        <div className="App">
+            <Router>
+                <Switch>
+                    <Route path="/" exact>
+                        <ProductList />
+                    </Route>
+                    <Route>
+                        <NotFound />
+                    </Route>
+                </Switch>
+            </Router>
+        </div>
+    );
+}
 
 export default App;

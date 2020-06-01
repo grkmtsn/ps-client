@@ -14,7 +14,7 @@ const Root = () => (
     </React.StrictMode>
 );
 
-ReactDOM.render(Root, document.getElementById('root'));
+ReactDOM.render(<Root />, document.getElementById('app'));
 
 module.hot.accept();
 
