@@ -10,4 +10,8 @@ module.exports = {
     testURL: 'http://localhost',
     transformIgnorePatterns: ['<rootDir>/node_modules/'],
     verbose: false,
+    transform: {
+        "^.+\\.jsx?$": "babel-jest",
+        "^.+\\.svg$": "jest-svg-transformer"
+    }
 };
