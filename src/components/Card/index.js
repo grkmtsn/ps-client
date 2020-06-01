@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 import { formatMoney } from '../../utils';
 
 // Components
-import LikeButton from '../LikeButton/LikeButton';
+import LikeButton from '../LkeButton';
 import CargoDetails from '../CargoDetails/CargoDetails';
 
 // Styled

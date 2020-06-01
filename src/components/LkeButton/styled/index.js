@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {ReactComponent as LikeIcon} from '../../assets/icons/heart.svg';
+import LikeIcon from '../../../assets/icons/heart.svg';
 
 export const Button = styled.button`
     position: absolute;
