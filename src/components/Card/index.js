@@ -7,7 +7,7 @@ import { formatMoney } from '../../utils';
 
 // Components
 import LikeButton from '../LkeButton';
-import CargoDetails from '../CargoDetails/CargoDetails';
+import CargoDetails from '../CargoDetails';
 
 // Styled
 import { Wrapper, ImageContainer, Image, ProductDetails, TitleWrapper, Title, SubTitle, Price } from './styled';
