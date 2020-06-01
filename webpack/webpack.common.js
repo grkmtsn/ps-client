@@ -12,10 +12,18 @@ module.exports = {
                 use: ['babel-loader', 'eslint-loader'],
             },
             {
-                loader: 'react-svg-loader',
-                options: {
-                    jsx: true
-                }
+                test: /\.svg$/,
+                use: [
+                    {
+                        loader: "babel-loader"
+                    },
+                    {
+                        loader: "react-svg-loader",
+                        options: {
+                            jsx: true
+                        }
+                    }
+                ]
             }
         ],
     },
